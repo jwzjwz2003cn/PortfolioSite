@@ -4,6 +4,10 @@ body {
 	font-weight: 300;
 }
 
+hr {
+	border: 1.5px solid #eee;
+}
+
 .text-muted {
 	color: #7d97ad;
 }

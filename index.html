@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial=scale=1">
-        <title>Portfolio</title>
+        <title>Frank Ji's Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="container">
-        	<div class="row">
+	        <header class="row">
         		<div class="col-md-6">
         			<img class="title-logo" src="images/logo.png" alt="Udacity logo">
         		</div>
@@ -21,15 +21,15 @@
         			<h1 class="title-super">Frank Ji</h1>
         			<h4>IBM Cloud Engineer</h4>
         		</div>
-        	</div>
+	        </header>
         	<div class="row">
         		<div class="col-md-12">
-        			<hr>
+        			<hr size="10">
         		</div>
         	</div>
         	<div class="row">
         		<div class="col-md-12">
-        			<img class="img-responsive" src="images/watson.png" alt="Main Portfolio image">
+        			<img class="img-responsive" src="images/cloud_small.jpg" srcset="images/cloud_medium.jpg 1280w, images/cloud_large.jpg 1920w" alt="Main Portfolio image">
         		</div>
         	</div>
         	<div class="row">
@@ -38,25 +38,31 @@
         		</div>
         	</div>
         	<div class="row text-center">
-        		<div class="col-md-4">
+    			<figure class="col-md-4">
         			<img class="img-responsive" src="images/bluemix.jpg" data-toggle="modal" data-target="#project1" alt="APPIFY IMAGE">
-        			<h3 class="text-uppercase">IBM Bluemix</h3>
-        			<a>https://www.ibm.com/cloud-computing/bluemix/</a>
-        		</div>
-        		<div class="col-md-4">
-        			<img class="img-responsive" src="images/websphere.jpg" data-toggle="modal" data-target="#project1" alt="SUNFLOWER IMAGE">
-        			<h3 class="text-uppercase">IBM WebSphere</h3>
-        			<a>http://www-03.ibm.com/software/products/en/appserv-was</a>
-        		</div>
-        		<div class="col-md-4">
-        			<img class="img-responsive" src="images/cognos.jpg" data-toggle="modal" data-target="#project1" alt="BOKEH IMAGE">
-        			<h3 class="text-uppercase">IBM Cognos Disclosure Management</h3>
-        			<a>https://www.ibm.com/ca-en/marketplace/finance-reporting-and-process-automation</a>
-        		</div>
+        			<figcaption>
+        				<h3 class="text-uppercase">IBM Bluemix</h3>
+        				<a>https://www.ibm.com/cloud-computing/bluemix/</a>
+        			</figcaption>
+    			</figure>
+    			<figure class="col-md-4">
+        			<img class="img-responsive" src="images/websphere.jpg" data-toggle="modal" data-target="#project2" alt="SUNFLOWER IMAGE">
+        			<figcaption>
+	        			<h3 class="text-uppercase">IBM WebSphere</h3>
+	        			<a>http://www-03.ibm.com/software/products/en/appserv-was</a>
+        			</figcaption>
+    			</figure>
+        		<figure class="col-md-4">
+        			<img class="img-responsive" src="images/cognos.jpg" data-toggle="modal" data-target="#project3" alt="BOKEH IMAGE">
+        			<figcaption>
+	        			<h3 class="text-uppercase">IBM Cognos Disclosure Management</h3>
+	        			<a>https://www.ibm.com/ca-en/marketplace/finance-reporting-and-process-automation</a>
+        			</figcaption>
+        		</figure>
         	</div>
         </div>
 	     <!-- Modal -->
-	    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	     <article class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	        <div class="modal-dialog">
 	            <div class="modal-content">
 	                <div class="modal-header">
@@ -64,16 +70,18 @@
 	                </div>
 	                <div class="modal-body">
 	                    <img class="img-responsive" src="images/bluemix.jpg">
-	                    This was my first project in this class. I learned a lot about HTML and CSS.
+	                    <!--TODO: better description here.-->
+	                    Worked on IBM Bluemix metrics frameworks to monitor application performance
 	                </div>
 	                <div class="modal-footer">
 	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	                </div>
 	            </div>
 	        </div>
-	    </div>
+	     </article>
+
 	     <!-- Modal -->
-	    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	     <article class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	        <div class="modal-dialog">
 	            <div class="modal-content">
 	                <div class="modal-header">
@@ -81,17 +89,19 @@
 	                </div>
 	                <div class="modal-body">
 	                    <img class="img-responsive" src="images/websphere.jpg">
-	                    This was my first project in this class. I learned a lot about HTML and CSS.
+	                    <!--TODO: better description here.-->
+	                    Worked on WebSphere install, serviceability and automated licensing tracking.
 	                </div>
 	                <div class="modal-footer">
 	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	                </div>
 	            </div>
-	        </div>
-	    </div>
+	        </div>	     	
+	     </article>
+
 
 	   	<!-- Modal -->
-	    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<article class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	        <div class="modal-dialog">
 	            <div class="modal-content">
 	                <div class="modal-header">
@@ -99,14 +109,14 @@
 	                </div>
 	                <div class="modal-body">
 	                    <img class="img-responsive" src="images/cognos.jpg">
-	                    This was my first project in this class. I learned a lot about HTML and CSS.
+	                    <!--TODO: better description here.-->
+	                    Worked on financial reporting using XBRL
 	                </div>
 	                <div class="modal-footer">
 	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	                </div>
 	            </div>
 	        </div>
-	    </div>
-
+		</article>
     </body>
 </html>
